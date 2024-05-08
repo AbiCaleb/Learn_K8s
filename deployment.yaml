@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: app2-deployment
+  name: myApp-deployment
   labels:
-    app: app2
+    app: myApp
     type: front-end
 spec:
   template:
     metadata:
-      name: app2-pod
+      name: myApp-pod
       labels:
-        app: app2
+        app: myApp
         type: front-end
     spec:
       containers:
